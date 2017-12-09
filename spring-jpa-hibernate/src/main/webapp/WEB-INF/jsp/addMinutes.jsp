@@ -37,18 +37,18 @@
 	<script type="text/javascript">
 		$(document).ready(
 			function() {
-				$.getJSON('<spring:url value="activities.json"/>', {
+				$.getJSON('<spring:url value="shares.json"/>', {
 					ajax : 'true'
 				}, function(data){
 					var html = '<option value="">--Please select one--</option>';
 					var len = data.length;
 					for (var i = 0; i < len; i++) {
-						html += '<option value="' + data[i].desc + '">'
-								+ data[i].desc + '</option>';
+						html += '<option value="' + data[i].name + '">'
+								+ data[i].name + '</option>';
 					}
 					html += '</option>';
 					
-					$('#activities').html(html);
+					$('#shares').html(html);
 				});
 				
 			});
@@ -94,21 +94,21 @@
       </a>
       <br/>
       <br/>
-      <form:form commandName="exercise">
+      <form:form commandName="share">
       	<form:errors path="*" cssClass="errorblock" element="div" />
       	<div class="control-group">
           <label for="textinput1">
             <spring:message code="minutes.text"/>
           </label>
-          <form:input path="minutes"/>
-          <form:errors path="minutes" cssClass="error" />
+          <form:input path="name"/>
+          <form:errors path="name" cssClass="error" />
         </div>
         
         <div class="control-group">
           <label for="selectinput1">
             <spring:message code="minutes.activity" />
           </label>
-          <form:select id="activities" path="activity" />
+          <form:select id="shares" path="name" />
         </div>
 		
 		<input type="submit" class="btn" value="<spring:message code="minutes.button.enter"/>"/>
@@ -124,21 +124,6 @@
     </script>
   </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
