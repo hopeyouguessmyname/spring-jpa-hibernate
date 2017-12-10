@@ -81,28 +81,28 @@
       </div>
     </div>
     <div class="container">
-      <div>
+      <!-- <div>
         <h1>
           <spring:message code="minutes.exercised"/>
         </h1>
-      </div>
-      <a class="btn" href="?language=en">
+      </div> -->
+      <!-- <a class="btn" href="?language=en">
         English
       </a>
       <a class="btn" href="?language=es">
         Spanish
       </a>
       <br/>
-      <br/>
+      <br/> -->
       <form:form commandName="share">
       	<form:errors path="*" cssClass="errorblock" element="div" />
-      	<div class="control-group">
+      	<!-- <div class="control-group">
           <label for="textinput1">
             <spring:message code="minutes.text"/>
           </label>
           <form:input path="name"/>
           <form:errors path="name" cssClass="error" />
-        </div>
+        </div> -->
         
         <div class="control-group">
           <label for="selectinput1">
@@ -111,13 +111,13 @@
           <form:select id="shares" path="name" />
         </div>
 		
-		<input type="submit" class="btn" value="<spring:message code="minutes.button.enter"/>"/>
+		<!-- <input type="submit" class="btn" value="<spring:message code="minutes.button.enter"/>"/> -->
 		
 	</form:form>
       
-      <span class="label">
+      <!-- <span class="label">
         <spring:message code="minutes.goal"/> ${goal.minutes}
-      </span>
+      </span> -->
     </div>
 
     <script src="assets/js/bootstrap.js">
