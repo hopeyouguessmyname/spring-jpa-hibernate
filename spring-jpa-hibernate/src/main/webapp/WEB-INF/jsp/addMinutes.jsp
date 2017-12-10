@@ -43,8 +43,8 @@
 					var html = '<option value="">--Please select one--</option>';
 					var len = data.length;
 					for (var i = 0; i < len; i++) {
-						html += '<option value="' + data[i].name + '">'
-								+ data[i].name + '</option>';
+						html += '<option value="' + data[i].abbreviation + '">'
+								+ data[i].abbreviation + '</option>';
 					}
 					html += '</option>';
 					

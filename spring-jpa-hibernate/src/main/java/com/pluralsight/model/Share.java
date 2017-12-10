@@ -4,17 +4,18 @@ import java.util.Date;
 
 public class Share {
 
-	private String name;
+	private String code;
 	private String abbreviation;
+	private String name;
 	private String price;
 	private Date date;
 
-	public String getName() {
-		return name;
+	public String getCode() {
+		return code;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setCode(String code) {
+		this.code = code;
 	}
 
 	public String getAbbreviation() {
@@ -23,6 +24,14 @@ public class Share {
 
 	public void setAbbreviation(String abbreviation) {
 		this.abbreviation = abbreviation;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
 	}
 
 	public String getPrice() {
