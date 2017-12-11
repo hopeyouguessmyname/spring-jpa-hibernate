@@ -119,6 +119,22 @@
         <spring:message code="minutes.goal"/> ${goal.minutes}
       </span> -->
     </div>
+    
+	<!-- <div class="navbar navbar-fixed-top navbar-inverse">
+		<div class="navbar-inner"> -->
+	<div class="container">
+			<ul class="nav nav-pills">
+				<li><a href="#">14D</a></li>
+				<li><a href="#">1M</a></li>
+				<li><a href="#">3M</a></li>
+				<li><a href="#">6M</a></li>
+				<li><a href="#">1R</a></li>
+			</ul>
+		<ul class="nav">
+		</ul>
+	</div>
+		<!-- </div>
+	</div> -->
 
     <script src="assets/js/bootstrap.js">
     </script>
